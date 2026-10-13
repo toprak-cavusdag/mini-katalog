@@ -28,7 +28,7 @@ Flutter eğitimi kapsamında geliştirilen basit bir ürün kataloğu uygulamas�
 2. Depoyu indirin ve klasöre girin:
 
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/toprak-cavusdag/mini-katalog.git
    cd mini-katalog
    ```
 
