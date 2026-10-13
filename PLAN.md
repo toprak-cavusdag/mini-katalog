@@ -47,7 +47,7 @@ Yönergenin kısıtları:
 
 - [x] Ekran görüntülerini al ve `ekran-goruntuleri/` klasörüne koy: ana sayfa, detay, dolu sepet, boş sepet.
 - [x] README'yi tamamla: proje adı, kısa açıklama, Flutter sürümü, çalıştırma adımları, ekran görüntüleri.
-- [ ] Public GitHub deposu aç ve projeyi gönder.
+- [x] Public GitHub deposu aç ve projeyi gönder: <https://github.com/toprak-cavusdag/mini-katalog>
 - [ ] Depo URL'ini ve ekran görüntülerini teslim et.
 
 Not: GitHub URL'i olmayan veya ekran görüntüsü eksik projeler teslim edilmiş sayılmıyor.
