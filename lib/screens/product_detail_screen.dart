@@ -73,10 +73,7 @@ class ProductDetailScreen extends StatelessWidget {
                 const SizedBox(height: 20),
                 const _SectionTitle('Açıklama'),
                 const SizedBox(height: 8),
-                Text(
-                  product.description,
-                  style: const TextStyle(height: 1.5),
-                ),
+                Text(product.description, style: const TextStyle(height: 1.5)),
                 const SizedBox(height: 20),
                 const _SectionTitle('Özellikler'),
                 const SizedBox(height: 8),
@@ -126,7 +123,7 @@ class _CartButton extends StatelessWidget {
             ),
             onPressed: () => cart.remove(product),
             icon: const Icon(Icons.check),
-            label: const Text('Sepette — Çıkar'),
+            label: const Text('Sepetten Çıkar'),
           );
         }
         return FilledButton.icon(

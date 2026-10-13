@@ -48,7 +48,6 @@ void main() {
   });
 
   testWidgets('Arama, detay ve sepet akışı', (tester) async {
-    // Telefon boyutunda bir ekran kullanılır.
     tester.view.physicalSize = const Size(1080, 2400);
     tester.view.devicePixelRatio = 3;
     addTearDown(tester.view.reset);

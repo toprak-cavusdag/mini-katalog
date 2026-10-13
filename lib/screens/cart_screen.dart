@@ -38,9 +38,7 @@ class CartScreen extends StatelessWidget {
         builder: (context, child) {
           return Column(
             children: [
-              Expanded(
-                child: cart.isEmpty ? const _EmptyCart() : _buildList(),
-              ),
+              Expanded(child: cart.isEmpty ? const _EmptyCart() : _buildList()),
               _buildFooter(context),
             ],
           );
@@ -120,7 +118,6 @@ class CartScreen extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             FilledButton(
-              // Sepet boşken buton pasif kalır.
               onPressed: cart.isEmpty ? null : () => _checkout(context),
               child: const Text('Siparişi Tamamla'),
             ),

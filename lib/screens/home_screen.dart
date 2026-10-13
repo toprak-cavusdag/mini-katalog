@@ -34,7 +34,8 @@ class _HomeScreenState extends State<HomeScreen> {
     return products.where((product) {
       final matchesCategory =
           _category == _allCategories || product.category == _category;
-      final matchesQuery = query.isEmpty ||
+      final matchesQuery =
+          query.isEmpty ||
           product.name.toLowerCase().contains(query) ||
           product.tagline.toLowerCase().contains(query);
       return matchesCategory && matchesQuery;
@@ -42,7 +43,6 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void _openDetail(Product product) {
-    // Seçilen ürün detay sayfasına route argument olarak taşınır.
     Navigator.pushNamed(context, AppRoutes.detail, arguments: product);
   }
 
@@ -69,7 +69,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildContent(List<Product> products) {
     final filtered = _filter(products);
-    // Set ile tekrar eden kategoriler ayıklanır.
     final categories = <String>{
       _allCategories,
       ...products.map((product) => product.category),
@@ -141,7 +140,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-        // Sepet değiştikçe yalnızca rozet yeniden çizilir.
         ListenableBuilder(
           listenable: cart,
           builder: (context, child) {
