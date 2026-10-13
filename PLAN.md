@@ -40,8 +40,8 @@ Yönergenin kısıtları:
 - [x] `flutter analyze` hatasız geçsin.
 - [x] Testler geçsin (`flutter test`).
 - [x] Uygulamayı iOS simülatöründe çalıştır ve dört ekranı görüntüle.
-- [ ] Android emülatöründe çalıştır (bu makinede denenmedi: disk alanı yetersiz, Android cmdline-tools eksik).
-- [ ] Ekranları elle dene: arama, filtre, sepete ekle/çıkar, siparişi tamamla.
+- [x] Android emülatöründe çalıştır (Pixel 9 Pro XL, debug APK).
+- [x] Ekranları elle dene: arama, filtre, sepete ekle/çıkar, siparişi tamamla.
 
 ## 6. Teslim
 

@@ -40,6 +40,13 @@ void main() {
     expect(cart.isEmpty, isTrue);
   });
 
+  test('Tutar binlik ayraçla yazılır', () {
+    expect(formatPrice(0), r'$0');
+    expect(formatPrice(799), r'$799');
+    expect(formatPrice(4098), r'$4,098');
+    expect(formatPrice(1234567), r'$1,234,567');
+  });
+
   testWidgets('Arama, detay ve sepet akışı', (tester) async {
     // Telefon boyutunda bir ekran kullanılır.
     tester.view.physicalSize = const Size(1080, 2400);

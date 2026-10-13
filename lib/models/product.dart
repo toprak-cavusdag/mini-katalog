@@ -63,3 +63,14 @@ class Product {
     return 'Diğer';
   }
 }
+
+/// 4098 gibi bir tutarı ürün fiyatlarıyla aynı biçimde ("$4,098") yazar.
+String formatPrice(double value) {
+  final digits = value.toStringAsFixed(0);
+  final buffer = StringBuffer(r'$');
+  for (var i = 0; i < digits.length; i++) {
+    if (i > 0 && (digits.length - i) % 3 == 0) buffer.write(',');
+    buffer.write(digits[i]);
+  }
+  return buffer.toString();
+}

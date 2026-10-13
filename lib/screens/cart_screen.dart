@@ -112,7 +112,7 @@ class CartScreen extends StatelessWidget {
                   const SizedBox(width: 8),
                   const Expanded(child: Text('Toplam')),
                   Text(
-                    '\$${cart.total.toStringAsFixed(0)}',
+                    formatPrice(cart.total),
                     style: const TextStyle(fontWeight: FontWeight.w700),
                   ),
                 ],
